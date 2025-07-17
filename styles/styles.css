@@ -1,36 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 .work-sans-font {
-  font-family: "Work Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400px;
-  font-style: normal;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400px;
+    font-style: normal;
 }
 
 
 
 /* shared styles */
-.display-flex{
+.display-flex {
     display: flex;
 }
-.dark-2{
+
+.dark-2 {
     color: rgba(66, 66, 66, 1);
 }
-.dark-3{
+
+.dark-3 {
     color: rgba(114, 114, 114, 1);
 }
-.text-primary{
+
+.text-primary {
     color: rgba(255, 144, 14, 1);
 }
-.bg-color{
+
+.bg-color {
     background-color: rgba(255, 144, 14, 0.1);
 }
-.section-title{
+
+.section-title {
     font-size: 2.8rem;
     font-weight: 700;
     margin-bottom: 24px;
 }
-.primary-btn{
+
+.primary-btn {
     font-size: 1.25rem;
     font-weight: 600;
     color: white;
@@ -39,34 +45,41 @@
     border-radius: 8px;
     background-color: rgba(255, 144, 14, 1);
 }
-main{
+
+main {
     max-width: 1440px;
     margin: 0 auto;
 }
-main > section{
+
+main>section {
     margin-top: 130px;
 }
 
 
 
 /* navbar styles */
-.navbar{
+.navbar {
     justify-content: space-between;
     align-items: center;
 }
-.brand{
+
+.brand {
     font-weight: 700;
     font-size: 3rem;
 }
-.nav-item{
+
+.nav-item {
     list-style: none;
     margin-right: 30px;
 }
-.nav-link{
+
+.nav-link {
     text-decoration: none;
     font-weight: 500;
 }
-.navbar, .banner{
+
+.navbar,
+.banner {
     max-width: 1440px;
     margin: 0 auto;
 }
@@ -75,38 +88,44 @@ main > section{
 
 
 /* banner styles */
-.banner-content{
+.banner-content {
     max-width: 860px;
     margin: 0 auto;
     text-align: center;
     margin-bottom: 50px;
 }
-.banner-title{
+
+.banner-title {
     font-weight: 700;
     font-size: 4rem;
 }
-.banner-image{
+
+.banner-image {
     max-width: 100%;
 }
 
 
 /* time and features styles */
-.times{
+.times {
     align-items: center;
 }
-.time-img-container{
+
+.time-img-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
 }
-.our-features{
+
+.our-features {
     margin-left: 130px;
     max-width: 530px;
 }
-.features-description{
+
+.features-description {
     margin-bottom: 32px;
 }
-#quick-list{
+
+#quick-list {
     font-weight: 500;
 }
 
@@ -114,20 +133,23 @@ main > section{
 
 
 /* Features you will love & enjoy styles */
-.features-section{
+.features-section {
     gap: 140px;
 }
-#features-title{
+
+#features-title {
     border-left: 5px solid rgba(255, 144, 14, 1);
     padding: 21px;
 }
-.feature-card{
+
+.feature-card {
     padding: 30px;
     box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
     margin-bottom: 20px;
     border-radius: 8px;
 }
-.feature-title{
+
+.feature-title {
     font-size: 1.2rem;
     font-weight: 600;
     /* margin-bottom: 10px;
@@ -135,21 +157,39 @@ main > section{
     margin: 0px;
 }
 
+#badge {
+    padding: 45px 42px;
+    font-weight: 400;
+    margin-top: -120px;
+    margin-left: -92px;
+}
+
+#badge-year {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.feature-architect img {
+    width: 100%;
+}
+
 
 
 
 
 /* Some Facts styles */
-.facts-container{
+.facts-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
-.secton-description{
+
+.secton-description {
     max-width: 542px;
     margin-top: 24px;
     margin-bottom: 100px;
 }
-.fact-card{
+
+.fact-card {
     border: 1px solid rgba(255, 144, 14, 1);
     border-radius: 8px;
     width: 242px;
@@ -158,29 +198,33 @@ main > section{
     justify-content: center;
     align-items: center;
 }
-.fact-number{
+
+.fact-number {
     font-size: 2.8rem;
     font-weight: 600;
     margin-bottom: 5px;
     margin-top: 10px;
 }
-.fact-name{
+
+.fact-name {
     font-size: 1rem;
     font-weight: 600;
     margin: 0;
 }
-                                                                  
+
 /* sponsors section styles */
-.sponsor-info{
+.sponsor-info {
     max-width: 540px;
     margin: 50px auto;
     text-align: center;
 }
-.sponsors{
+
+.sponsors {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
 }
-.sponsors img{
+
+.sponsors img {
     filter: grayscale(100%);
 }
 
@@ -190,28 +234,40 @@ main > section{
 
 /* nav and banner responsive media query */
 @media screen and (max-width: 576px) {
-        .navbar, 
-        .nav-link, 
-        .times{
-            flex-direction: column;
-        }
-        .time-img-container, 
-        .facts-container, .sponsors{
-            grid-template-columns: repeat(1, 1fr);
-        }
-        .facts-container{
-            justify-items: center;
-            gap: 24px;
-        }
-        .sponsors{
-            justify-items: center;
-            gap: 50px;
-        }
-        .our-features, 
-        .section-title, 
-        .secton-description{
-            margin-left: 15px;
-        }
+
+    .navbar,
+    .nav-link,
+    .features-section,
+    .times {
+        flex-direction: column;
+    }
+
+    .time-img-container,
+    .facts-container,
+    .sponsors {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .facts-container {
+        justify-items: center;
+        gap: 24px;
+    }
+
+    .sponsors {
+        justify-items: center;
+        gap: 50px;
+    }
+
+    .our-features,
+    .section-title,
+    .secton-description {
+        margin-left: 15px;
+    }
+
+    #badge {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
 }
 
 
@@ -220,16 +276,23 @@ main > section{
 
 /* medium size device */
 @media screen and (min-width:577px) and (max-width: 992px) {
-    .times{
+    .times,
+    .features-section{
         flex-direction: column;
     }
-    .our-features{
+
+    .our-features {
         margin: 20px auto;
     }
-    .sponsors, 
-    .facts-container{
+
+    .sponsors,
+    .facts-container {
         grid-template-columns: repeat(2, 1fr);
         gap: 50px;
         justify-items: center;
+    }
+    #badge {
+        margin-top: 20px;
+        margin-left: 20px;
     }
 }
