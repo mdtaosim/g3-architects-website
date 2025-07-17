@@ -112,23 +112,6 @@ main > section{
 
 
 
-/* nav and banner responsive media query */
-@media screen and (max-width: 576px) {
-        .navbar, 
-        .nav-link, 
-        .times{
-            flex-direction: column;
-        }
-        .time-img-container{
-            grid-template-columns: repeat(1, 1fr);
-        }
-        .our-features{
-            margin-left: 15px;
-        }
-}
-
-
-
 
 /* Some Facts styles */
 .facts-container{
@@ -148,6 +131,7 @@ main > section{
     text-align: center;
     justify-content: center;
     align-items: center;
+    /* margin-left: 50px; */
 }
 .fact-number{
     font-size: 2.8rem;
@@ -160,7 +144,52 @@ main > section{
     font-weight: 600;
     margin: 0;
 }
-                                                                                                                                                                                   
+                                                                  
+/* sponsors section styles */
+.sponsor-info{
+    max-width: 540px;
+    margin: 50px auto;
+    text-align: center;
+}
+.sponsors{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.sponsors img{
+    filter: grayscale(100%);
+}
+
+
+
+
+
+/* nav and banner responsive media query */
+@media screen and (max-width: 576px) {
+        .navbar, 
+        .nav-link, 
+        .times{
+            flex-direction: column;
+        }
+        .time-img-container, 
+        .facts-container, .sponsors{
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .facts-container{
+            justify-items: center;
+            gap: 24px;
+        }
+        .sponsors{
+            justify-items: center;
+            gap: 50px;
+        }
+        .our-features, 
+        .section-title, 
+        .secton-description{
+            margin-left: 15px;
+        }
+}
+
+
 
 
 
@@ -171,5 +200,11 @@ main > section{
     }
     .our-features{
         margin: 20px auto;
+    }
+    .sponsors, 
+    .facts-container{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+        justify-items: center;
     }
 }
