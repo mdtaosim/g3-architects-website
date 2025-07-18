@@ -152,8 +152,6 @@ main>section {
 .feature-title {
     font-size: 1.2rem;
     font-weight: 600;
-    /* margin-bottom: 10px;
-    margin-top: 0px; */
     margin: 0px;
 }
 
@@ -226,6 +224,21 @@ main>section {
 
 .sponsors img {
     filter: grayscale(100%);
+}
+
+
+
+
+/* footer section styles */
+footer h4{
+    background-color: rgba(255, 244, 231, 1);
+    max-width: 1440px;
+    margin: 130px auto;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding: 40px 0px;
 }
 
 
